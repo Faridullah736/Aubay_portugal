@@ -20,7 +20,7 @@ public struct NationPopulationView: View {
         case .failed:
             VStack {
                 Spacer()
-                Text("couldn´t fetch state population 🫣")
+                Text("couldn´t fetch Nation population 🫣")
                 Spacer()
             }
         }

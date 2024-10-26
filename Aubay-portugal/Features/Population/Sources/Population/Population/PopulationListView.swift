@@ -6,12 +6,12 @@ public struct PopulationListView: View {
     var title: String
 
     public var body: some View {
-        NavigationView {
+        NavigationStack {
             List(data) { data in
                 PopulationRowView(state: (data.state ?? data.nation) ?? "", population: data.population ?? 0, year: data.year ?? "", colName: title)
             }
             .navigationTitle("USA \(title) Population")
-            .navigationBarTitleDisplayMode(.inline) 
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
